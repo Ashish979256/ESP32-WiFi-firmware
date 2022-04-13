@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <title>Holmium Logger</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="col-xs-3 col-sm-5 col-md-5">
+          </div>
+          <div class="col-xs-6 col-sm-5 col-md-5">
+            <img src="logo.jpg" style="height:150px;width:150px;">
+          </div>
+	   <div class="col-xs-3 col-sm-2 col-md-2">
+          </div>
+      </div>
+      <div class="container">
+        <form action="/get">
+        <div class="form-group col-md-3"> 
+        </div>
+        <div class="form-group col-md-6" > 
+        
+           <div class="form-group" >
+              <label for="testMode" style="color:#00BFFF;">Test Mode </label>
+              <input type="radio" id="test_mode" name="testMode" value="1">
+              <label for="testMode" style="color:#00BFFF;">Config Mode </label>
+              <input type="radio" id="config_mode" name="testMode" value="0">
+            </div>
+            <div class="form-group">
+              <label for="dhcpEnable" style="color:#00BFFF;">DHCP Enable </label>
+              <input type="radio" id="DHCP_Enable" name="dhcpEnable" value="1">
+              <label for="dhcpEnable" style="color:#00BFFF;">DHCP Disable </label>
+              <input type="radio" id="DHCP_Disble" name="dhcpEnable" value="0">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  style="color:#00BFFF;" id="SSID" placeholder="Enter SSID" name="ssid">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" style="color:#00BFFF;" id="pwd" placeholder="Enter password" name="password">
+            </div>
+		<div class="form-group">
+              
+              <input type="text" class="form-control" style="color:#00BFFF;" id="ip" placeholder="Enter IP Address" name="ip">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" style="color:#00BFFF;" id="gateway" placeholder="Enter gateway" name="gateway">
+            </div>
+            <div class="form-group">
+             
+              <input type="text" class="form-control" style="color:#00BFFF;" id="subnet" placeholder="Enter Subnet" name="subnet">
+            </div>
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="priDNS" style="color:#00BFFF;" placeholder="Enter Primary DNS" name="priDNS">
+            </div>
+             <div class="form-group">
+              
+              <input type="text" class="form-control" style="color:#00BFFF;" id="secDNS" placeholder="Enter Secondary DNS" name="secDNS">
+            </div>
+           <br>
+           <div class="form-group">
+            <div class="col-xs-4 col-sm-5 col-md-5">
+              </div>
+              <div class="col-xs-3 col-sm-5 col-md-5">
+                <button type="submit" class="btn btn-default"style="background-color:#4682B4;color:white;">Submit</button>
+              </div>
+           </div>
+          </div> 
+       </form>
+     </div>
+ 
+  </body>
+ </html>
